@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
-function Projects(){
+function Contact(){
 
-    const [showProjects, setShowProjects] = useState(false);
+    const [showContact, setShowContact] = useState(false);
     useEffect(() => {
       window.addEventListener("scroll", handleScroll);
       return () => window.removeEventListener("scroll", handleScroll);
@@ -10,18 +10,17 @@ function Projects(){
   
     const handleScroll = () => {
       if (window.scrollY > 500) {
-        setShowProjects(true);
+        setShowContact(true);
       } else {
-        setShowProjects(false);
+        setShowContact(false);
       }
     };
-
-    
+  
     return(
-        <div id="projects">
+        <div>
 
         </div>
     )
 }
 
-export default Projects
+export default Contact
