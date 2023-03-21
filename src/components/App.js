@@ -4,6 +4,7 @@ import Projects from "./Projects";
 import Home from "./Home";
 import "../app.css"
 import Contact from "./Contact";
+import Resume from "./Resume"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <NavBar />
       <Home />
       <About />
+      <Resume />
       <Projects />
       <Contact />
     </div>
