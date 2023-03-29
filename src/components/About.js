@@ -1,31 +1,30 @@
 import React, { useState, useEffect } from "react";
 
 function About() {
-  // const [showAboutMe, setShowAboutMe] = useState(false);
+  const [showAboutMe, setShowAboutMe] = useState(false);
 
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-  // const handleScroll = () => {
-  //   if (window.scrollY > 500) {
-  //     setShowAboutMe(true);
-  //   } else {
-  //     setShowAboutMe(false);
-  //   }
-  // };
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setShowAboutMe(true);
+    } else {
+      setShowAboutMe(false);
+    }
+  };
 
   return (
     <div
       id="about"
-      // className={`flex flex-col justify-center items-left min-h-screen p-8 bg-gray-900 transition-opacity duration-500 ${
-      //   showAboutMe ? "opacity-100" : "opacity-0"
-      // } ml-12`}
+      className={`flex flex-col justify-center items-left min-h-screen p-8 bg-gray-900 transition-opacity duration-500 ml-12`}
+      style={{ opacity: showAboutMe ? "1" : "0"}}
     >
       <section>
-      <h4 className="text-black text-4xl font-bold mb-4">About Me</h4>
-      <p className="text-gray-400 text-lg mb-4">
+      <h4 className="text-white text-4xl font-bold mb-4">About Me</h4>
+      <p className="text-grey-400 text-lg mb-4">
         Highly motivated Software engineer, proficient with front and back-end
         languages such as Ruby, Rails, JavaScript and React. Over 5+ years of
         success in B2B and B2C sales including customer experience, marketing,
@@ -36,7 +35,7 @@ function About() {
       </p>
       </section>
       <section> 
-      <div className="flex flex-wrap items-center text-gray-400">
+      <div className="flex flex-wrap items-center text-white-400">
         <h6 className="text-yellow-500 text-lg font-bold w-2/3 pt-6 pb-2">
           Technologies:
         </h6>

@@ -24,7 +24,7 @@ function Projects() {
           <h2> Travel App</h2>
           <img src="#" alt="screenshot" />
           <a href="https://travel-app-oqck.onrender.com"> Site </a>
-          <a href="https://travel-app-oqck.onrender.com"> Demo </a>
+          {/* <a href="https://travel-app-oqck.onrender.com"> Demo </a> embed video for picture  */}
           <p>
             Full Stack web app designed to help users plan and share memories
             created on their trips.

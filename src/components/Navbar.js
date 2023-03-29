@@ -1,9 +1,12 @@
 import { Link } from "react-scroll";
-import { Navbar, Nav } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 function NavBar() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
+    <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+      <Container style={{display: "flex", justifyContent: "space between"}}>
       <Navbar.Brand href="#home">
         <h1 className="text-3xl font-bold underline text-white">
           <Link to="home" smooth={true} duration={500}>
@@ -21,7 +24,7 @@ function NavBar() {
               duration={500}
               style={{ margin: "0 10px" }}
             >
-              About Me
+              About
             </Link>
           </Nav.Link>
           <Nav.Link>
@@ -57,6 +60,7 @@ function NavBar() {
           
         </Nav>
       </Navbar.Collapse>
+      </Container>
     </Navbar>
   );
 }

@@ -6,6 +6,7 @@ import "../app.css"
 import Contact from "./Contact";
 import Resume from "./Resume"
 
+
 function App() {
   return (
     <div>
